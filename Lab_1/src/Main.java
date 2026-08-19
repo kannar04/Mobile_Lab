@@ -32,10 +32,6 @@ public class Main {
 
     // In toàn bộ danh sách số đã sinh ra màn hình.
     private static void printNumbers(double[] numbers) {
-        if (numbers == null || numbers.length == 0) {
-            System.out.println("No numbers to print.");
-            return;
-        }
 
         System.out.println("Generated numbers:");
 
@@ -46,10 +42,6 @@ public class Main {
 
     // In bảng tần suất của 10 khoảng: [0.0, 0.1), ..., [0.9, 1.0].
     private static void printFrequencies(int[] frequencies) {
-        if (frequencies == null || frequencies.length == 0) {
-            System.out.println("No frequencies to print.");
-            return;
-        }
 
         System.out.println();
         System.out.println("Frequency table:");

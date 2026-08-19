@@ -2,17 +2,7 @@
 public class Graphic extends AGraphics {
     @Override
     public void draw(int[] frequencies) {
-        if (frequencies == null || frequencies.length == 0) {
-            System.out.println("Cannot draw histogram because frequency data is null or empty.");
-            return;
-        }
-
         int maxFrequency = findMaxFrequency(frequencies);
-
-        if (maxFrequency == 0) {
-            System.out.println("All frequencies are 0. Histogram has no columns to draw.");
-            return;
-        }
 
         System.out.println();
         System.out.println("Vertical Histogram:");

@@ -7,11 +7,6 @@ public class Statistics implements IStats {
 
     @Override
     public double[] generateRandomNumbers(int size) {
-        if (size <= 0) {
-            System.out.println("Size must be greater than 0. Returning an empty array.");
-            numbers = new double[0];
-            return numbers;
-        }
 
         numbers = new double[size];
         Random random = new Random();
@@ -27,7 +22,6 @@ public class Statistics implements IStats {
     @Override
     public double mean(double[] numbers) {
         if (numbers == null || numbers.length == 0) {
-            System.out.println("Cannot calculate mean because the array is null or empty.");
             return 0;
         }
 
@@ -43,10 +37,6 @@ public class Statistics implements IStats {
 
     @Override
     public double variance(double[] numbers) {
-        if (numbers == null || numbers.length == 0) {
-            System.out.println("Cannot calculate variance because the array is null or empty.");
-            return 0;
-        }
 
         double meanValue = mean(numbers);
         double sumSquaredDifference = 0;
@@ -62,10 +52,6 @@ public class Statistics implements IStats {
 
     @Override
     public double median(double[] numbers) {
-        if (numbers == null || numbers.length == 0) {
-            System.out.println("Cannot calculate median because the array is null or empty.");
-            return 0;
-        }
 
         double[] copiedNumbers = new double[numbers.length];
 
@@ -90,11 +76,6 @@ public class Statistics implements IStats {
     @Override
     public int[] freq() {
         int[] frequencies = new int[10];
-
-        if (numbers == null || numbers.length == 0) {
-            System.out.println("No data available. Please generate random numbers first.");
-            return frequencies;
-        }
 
         // Đếm số lượng phần tử rơi vào từng khoảng 0.1.
         for (int i = 0; i < numbers.length; i++) {
