@@ -1,4 +1,3 @@
-// Lớp phụ trách hiển thị biểu đồ tần suất dạng dọc trên console.
 public class Graphic extends AGraphics {
     @Override
     public void draw(int[] frequencies) {

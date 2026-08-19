@@ -1,6 +1,5 @@
 import java.util.Random;
 
-// Cài đặt các phép toán thống kê được khai báo trong IStats.
 public class Statistics implements IStats {
     // Lưu lại mảng số ngẫu nhiên để hàm freq() có thể tính tần suất.
     private double[] numbers;

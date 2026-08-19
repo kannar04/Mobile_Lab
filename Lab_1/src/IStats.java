@@ -1,4 +1,3 @@
-// Interface định nghĩa các thao tác thống kê cần có trong chương trình.
 public interface IStats {
     // Sinh mảng gồm size số ngẫu nhiên trong khoảng [0.0, 1.0).
     double[] generateRandomNumbers(int size);

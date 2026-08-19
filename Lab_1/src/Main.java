@@ -1,6 +1,5 @@
 import java.util.Locale;
 
-// Lớp chính dùng để chạy toàn bộ chương trình thống kê và vẽ biểu đồ.
 public class Main {
     public static void main(String[] args) {
         // Tạo đối tượng xử lý thống kê thông qua interface IStats.
